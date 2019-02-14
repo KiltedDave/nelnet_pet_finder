@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="iBasePet.cs" />
+    <Compile Include="OutputMessages.cs" />
+    <Compile Include="ProcessPlayer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace nelnet_pet_finder
 {
@@ -13,14 +9,14 @@ namespace nelnet_pet_finder
             List<iBasePet> petList = BasePet.InitializePetList();
 
             var name = OutputMessages.EnterName();
-            var preferedClass = OutputMessages.PreferedPetClass();
-            var preferedType = OutputMessages.PreferedPetType();
+            var preferredClass = OutputMessages.PreferredPetClass();
+            var preferredType = OutputMessages.PreferredPetType();
 
             OutputMessages.ResultsOutput(name);
 
             foreach(iBasePet singlePet in petList)
             {
-                if(singlePet.PetClass.ToUpper() == preferedClass || singlePet.PetType.ToUpper() == preferedType)
+                if(preferredClass.Contains(singlePet.PetClass.ToUpper()) || preferredType.Contains(singlePet.PetType.ToUpper()) )
                 {
                     OutputMessages.PetMatchOutput(singlePet.PetName, true);
                 }

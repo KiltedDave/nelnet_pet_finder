@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace nelnet_pet_finder
+﻿namespace nelnet_pet_finder
 {
     class CommonFunctions
     {

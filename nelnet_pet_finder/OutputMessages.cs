@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace nelnet_pet_finder
 {
@@ -35,14 +31,14 @@ namespace nelnet_pet_finder
             Console.WriteLine("Please enter your name: ");
             return Console.ReadLine();
         }
-        public static string PreferedPetClass()
+        public static string PreferredPetClass()
         {
-            Console.WriteLine("What class of animal would you like to find (i.e. Mammal, Arachnid, Reptile, etc...)? ");
+            Console.WriteLine("What class of animal would you like to find (i.e. Mammal, Arachnid, Reptile, etc...)? If multiple, please seperate by commas.");
             return Console.ReadLine().ToUpper();
         }
-        public static string PreferedPetType()
+        public static string PreferredPetType()
         {
-            Console.WriteLine("What type of animal based on the classification (i.e. Cat, Dog, Goldfish, Parrot, etc...)? ");
+            Console.WriteLine("What type of animal based on the classification (i.e. Cat, Dog, Goldfish, Parrot, etc...)?  If multiple, please seperate by commas.");
             return Console.ReadLine().ToUpper();
         }
 
